@@ -1,6 +1,7 @@
 package io;
 
 import java.io.*;
+import java.util.prefs.Preferences;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -17,6 +18,8 @@ public class ZipTest1 {
         zip(file, zipOutputStream, outputStream);
         zipOutputStream.close();
         outputStream.close();
+        //
+        Preferences preferences = Preferences.userNodeForPackage(User.class);
     }
 
     public static void zip(File sourceFile, ZipOutputStream zipOutputStream, BufferedOutputStream outputStream) throws IOException {
