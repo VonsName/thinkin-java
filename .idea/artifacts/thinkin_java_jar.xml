@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="thinkin-java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/thinkin_java_jar</output-path>
+    <root id="archive" name="thinkin-java.jar">
+      <element id="module-output" name="thinkin-java" />
+    </root>
+  </artifact>
+</component>
